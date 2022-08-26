@@ -1,5 +1,6 @@
 import { Text, View, TextInput, TouchableOpacity} from "react-native";
 import {styles} from './styles'
+import { Participant } from "../../components/Participant";
 export default function Home(){
   function handleParticipantAdd(){
     console.log("Você clicou no botão adicionar!")
@@ -11,6 +12,7 @@ export default function Home(){
      
     <Text style={styles.eventDate}>Sexta, 4 de Novembro de 2022</Text>
     
+    <View style={styles.form}>
     <TextInput 
     style={styles.input}
     placeholder="Nome do participante"
@@ -21,6 +23,10 @@ export default function Home(){
         +
       </Text>
     </TouchableOpacity>
+    </View>
+
+    <Participant />
+    <Participant />
     </View>
   )
 }
