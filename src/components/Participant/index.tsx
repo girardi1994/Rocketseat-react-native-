@@ -3,7 +3,7 @@ import { styles } from "./styles";
 
 type Props={
   name: string;
-  onRemove:() => void;
+  onRemove: () => void;
 }
 
 export function Participant({name, onRemove}:Props){
